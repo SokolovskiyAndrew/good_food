@@ -1,4 +1,4 @@
-<h1>Website project for the restraunt Good Food</h1>
+<h1>Website project for the restaurant Good Food</h1>
 <img src="./gitpage/img_1.jpg"/>
 
 
