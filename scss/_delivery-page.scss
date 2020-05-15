@@ -1,0 +1,134 @@
+.contact {
+    background-size: cover;
+    background-position: left;
+    padding: 70px 0;
+
+    .section-title::after {
+        display: none;
+    }
+
+    .form {
+        background-color: #fafafac0;
+        padding: 40px 20px;
+        border-radius: 15px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+
+        &-image {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            &_overlay {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $yellow-light;
+                opacity: 0.4;
+            }
+        }
+
+        label {
+            color: $grey-text;
+
+            span {
+                color: $yellow;
+                font-size: 20px;
+            }
+        }
+
+        input[type="email"],
+        input[type="tel"],
+        option,
+        select,
+        textarea {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $grey-text;
+            font-family: $font-cabin;
+            color: rgb(167, 166, 172);
+            outline: none;
+        }
+
+        ::placeholder {
+            font-family: $font-cabin;
+            color: rgb(167, 166, 172);
+        }
+
+        select {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                color: white;
+            }
+
+            .select__arrow {
+                position: absolute;
+                color: white;
+                top: 10;
+                right: 10;
+            }
+        }
+    }
+
+    .info-wrap {
+        h3 {
+            color: $black;
+        }
+
+        .dbox {
+            width: 100%;
+            color: $grey-text;
+            margin-bottom: 25px;
+
+            p {
+                margin-bottom: 0;
+                align-self: center;
+
+                span {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: $black;
+                }
+
+                a {
+                    color: $grey-text;
+                    font-size: 20px;
+                }
+            }
+
+            .icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: $yellow;
+
+                span {
+                    font-size: 20px;
+                    color: $black;
+                }
+            }
+
+            .text {
+                width: calc(100% - 50px);
+            }
+        }
+    }
+}
